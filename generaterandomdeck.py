@@ -34,3 +34,6 @@ print("")
 print("#extra")
 for card in extradeck:
         print(card)
+print("")
+print("!side")
+print("")
