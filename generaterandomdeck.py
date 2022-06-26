@@ -10,7 +10,9 @@ cards = dump_dict['data'] # Pull out the cards
 ids = set()
 edids = set()
 for card in cards:
-        if "XYZ" in card['type'] or "Link" in card['type'] or "Synchro" in card['type'] or "Fusion" in card['type']:
+        if "Token" in card['type']:
+            pass
+        elif "XYZ" in card['type'] or "Link" in card['type'] or "Synchro" in card['type'] or "Fusion" in card['type']:
                 edids.add(card['id'])
         else:
                 ids.add(card['id'])
